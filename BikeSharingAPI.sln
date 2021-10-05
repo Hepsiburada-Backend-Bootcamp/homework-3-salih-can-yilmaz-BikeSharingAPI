@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BikeSharing.Domain", "BikeS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BikeSharing.Infrastructure", "BikeSharing.Infrastructure\BikeSharing.Infrastructure.csproj", "{04F967CE-DA4D-4469-B364-67E70D70AFF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeSharing.Application", "BikeSharing.Application\BikeSharing.Application.csproj", "{9540B751-4294-41EF-A79B-3D9781932265}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BikeSharing.Application", "BikeSharing.Application\BikeSharing.Application.csproj", "{9540B751-4294-41EF-A79B-3D9781932265}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeSharingAPI.Test", "BikeSharingAPI.Test\BikeSharingAPI.Test.csproj", "{CE9C474C-70C3-4074-A3CF-6BEC78959A23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9540B751-4294-41EF-A79B-3D9781932265}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9540B751-4294-41EF-A79B-3D9781932265}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9540B751-4294-41EF-A79B-3D9781932265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE9C474C-70C3-4074-A3CF-6BEC78959A23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE9C474C-70C3-4074-A3CF-6BEC78959A23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE9C474C-70C3-4074-A3CF-6BEC78959A23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE9C474C-70C3-4074-A3CF-6BEC78959A23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
