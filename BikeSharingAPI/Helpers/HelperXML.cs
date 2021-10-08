@@ -17,7 +17,7 @@ namespace BikeSharingAPI.Helpers
             {
                 var xml = "";
 
-                XmlSerializer serializer = new XmlSerializer(typeof(T));
+                 XmlSerializer serializer = new XmlSerializer(typeof(T));
                 using (var sww = new StringWriter())
                 {
                     using (XmlWriter writer = XmlWriter.Create(sww))
