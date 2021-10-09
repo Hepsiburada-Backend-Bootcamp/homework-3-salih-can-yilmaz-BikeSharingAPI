@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BikeSharing.Application.DTOs.Bicycles;
 using BikeSharing.Application.DTOs.Sessions;
 using BikeSharing.Application.DTOs.Users;
 using BikeSharing.Domain.Entities;
@@ -20,6 +21,10 @@ namespace BikeSharing.Application.Tools
             CreateMap<SessionCreateDTO, Session>();
             CreateMap<Session, SessionReadDTO>();
             CreateMap<SessionUpdateDTO, Session>();
+
+            CreateMap<BicycleCreateDTO, Bicycle>();
+            CreateMap<Bicycle, BicycleReadDTO>();
+            CreateMap<BicycleUpdateDTO, Bicycle>();
         }
     }
 }

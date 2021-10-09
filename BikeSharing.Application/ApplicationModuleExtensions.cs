@@ -21,6 +21,7 @@ namespace BikeSharing.Application
 
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<ISessionService, SessionService>();
+            services.AddScoped<IBicycleService, BicycleService>();
 
             services.AddInfrastructureModule(configuration);
 

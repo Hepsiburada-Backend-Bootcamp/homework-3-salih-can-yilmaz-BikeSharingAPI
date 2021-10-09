@@ -24,6 +24,7 @@ namespace BikeSharing.Infrastructure
 
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ISessionRepository, SessionRepository>();
+            services.AddScoped<IBicycleRepository, BicycleRepository>();
 
             return services;
         }

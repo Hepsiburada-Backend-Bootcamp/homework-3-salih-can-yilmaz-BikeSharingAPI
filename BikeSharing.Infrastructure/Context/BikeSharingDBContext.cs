@@ -12,6 +12,7 @@ namespace BikeSharing.Infrastructure.Context
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Session> Sessions { get; set; }
+        public DbSet<Bicycle> Bicycles { get; set; }
 
         public BikeSharingDBContext(DbContextOptions options) : base(options)
         {

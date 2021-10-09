@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 using BikeSharing.Domain.Enums;
 
-namespace BikeSharing.Domain.Entities
+namespace BikeSharing.Application.DTOs.Bicycles
 {
-    public class Bicycle
+    public class BicycleReadDTO
     {
         public Guid Id { get; set; }
         public DateTime InServiceDate { get; set; }
