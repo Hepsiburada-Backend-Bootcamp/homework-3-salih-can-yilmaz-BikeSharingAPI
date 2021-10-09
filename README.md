@@ -32,7 +32,7 @@ SQLite is choosen for it's ability to initialize a database from scratch quickly
 ---
 ### Swagger Documentation
 ---
-https://app.swaggerhub.com/apis-docs/SCY95/bike-sharing_api/v1
+https://app.swaggerhub.com/apis-docs/SCY95/bike-sharing_api2/v1
 ### Headers
 ---
 #### API Key 
