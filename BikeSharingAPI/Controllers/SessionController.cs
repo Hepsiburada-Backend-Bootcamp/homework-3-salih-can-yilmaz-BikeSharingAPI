@@ -34,7 +34,7 @@ namespace BikeSharingAPI.Controllers
         /// </summary>
         /// <returns>Json formatinda kullanici listesi.</returns>
         [HttpGet]
-        public IActionResult GetSessionList(
+        public async Task<IActionResult> GetSessionList(
             string filter = "",
             string orderByParams = "",
             string fields = ""
@@ -83,7 +83,7 @@ namespace BikeSharingAPI.Controllers
         /// <returns>Eger bulursa, session bilgileri json formatinda.</returns>
         [Route("{id}")]
         [HttpGet]
-        public IActionResult GetSession([FromRoute] Guid id)
+        public async Task<IActionResult> GetSession([FromRoute] Guid id)
         {
             Log.Information(SharedData.LogMessageRequestReceived);
 
@@ -128,7 +128,7 @@ namespace BikeSharingAPI.Controllers
         /// <param name="sessionCreateDTO"></param>
         /// <returns></returns>
         [HttpPost]
-        public IActionResult CreateSession(
+        public async Task<IActionResult> CreateSession(
             [FromBody] SessionCreateDTO sessionCreateDTO
             )
         {
@@ -157,7 +157,7 @@ namespace BikeSharingAPI.Controllers
         /// <param name="sessionUpdateDTO"></param>
         /// <returns>if succeeds 204; if fails 400 or 500</returns>
         [HttpPut]
-        public IActionResult PutSession([FromBody]SessionUpdateDTO sessionUpdateDTO)
+        public async Task<IActionResult> PutSession([FromBody]SessionUpdateDTO sessionUpdateDTO)
         {
             Log.Information(SharedData.LogMessageRequestReceived);
 
@@ -183,7 +183,7 @@ namespace BikeSharingAPI.Controllers
         /// <param name="sessionUpdateDTO"></param>
         /// <returns>if succeeds 204; if fails 400 or 500</returns>
         [HttpPatch]
-        public IActionResult PatchSession([FromBody] SessionUpdateDTO sessionUpdateDTO)
+        public async Task<IActionResult> PatchSession([FromBody] SessionUpdateDTO sessionUpdateDTO)
         {
             Log.Information(SharedData.LogMessageRequestReceived);
 
@@ -210,7 +210,7 @@ namespace BikeSharingAPI.Controllers
         /// <returns></returns>
         [HttpDelete]
         [Route("{id}")]
-        public IActionResult DeleteSession([FromRoute] Guid id)
+        public async Task<IActionResult> DeleteSession([FromRoute] Guid id)
         {
             Log.Information(SharedData.LogMessageRequestReceived);
 

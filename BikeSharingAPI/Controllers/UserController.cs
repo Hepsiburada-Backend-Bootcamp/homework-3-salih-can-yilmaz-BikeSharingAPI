@@ -35,7 +35,7 @@ namespace BikeSharingAPI.Controllers
         /// </summary>
         /// <returns>Json formatinda kullanici listesi.</returns>
         [HttpGet]
-        public IActionResult GetUserList(
+        public async Task<IActionResult> GetUserList(
             string filter = "",
             string orderByParams = "",
             string fields = ""
@@ -85,7 +85,7 @@ namespace BikeSharingAPI.Controllers
         [Route("{id}")]
         [Route("{id}/Sessions")]
         [HttpGet]
-        public IActionResult GetUser([FromRoute]int id)
+        public async Task<IActionResult> GetUser([FromRoute]int id)
         {
             Log.Information(SharedData.LogMessageRequestReceived);
             try
@@ -134,7 +134,7 @@ namespace BikeSharingAPI.Controllers
         /// <param name="userCreateDTO"></param>
         /// <returns></returns>
         [HttpPost]
-        public IActionResult CreateUser(
+        public async Task<IActionResult> CreateUser(
             [FromBody] UserCreateDTO userCreateDTO
             )
         {
@@ -163,7 +163,7 @@ namespace BikeSharingAPI.Controllers
         /// <param name="userUpdateDTO"></param>
         /// <returns>if succeeds 204; if fails 400 or 500</returns>
         [HttpPut]
-        public IActionResult PutUser([FromBody] UserUpdateDTO userUpdateDTO)
+        public async Task<IActionResult> PutUser([FromBody] UserUpdateDTO userUpdateDTO)
         {
             Log.Information(SharedData.LogMessageRequestReceived);
 
@@ -189,7 +189,7 @@ namespace BikeSharingAPI.Controllers
         /// <param name="userUpdateDTO"></param>
         /// <returns>if succeeds 204; if fails 400 or 500</returns>
         [HttpPatch]
-        public IActionResult PatchUser([FromBody] UserUpdateDTO userUpdateDTO)
+        public async Task<IActionResult> PatchUser([FromBody] UserUpdateDTO userUpdateDTO)
         {
             Log.Information(SharedData.LogMessageRequestReceived);
 
@@ -216,7 +216,7 @@ namespace BikeSharingAPI.Controllers
         /// <returns></returns>
         [HttpDelete]
         [Route("{id}")]
-        public IActionResult DeleteUser([FromRoute] int id)
+        public async Task<IActionResult> DeleteUser([FromRoute] int id)
         {
             Log.Information(SharedData.LogMessageRequestReceived);
 
